@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lifeguardian-ai
+    runtime: python
+    rootDir: .
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && python main.py
